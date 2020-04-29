@@ -5,7 +5,7 @@ FROM navikt/node-express:12.2.0-alpine
 COPY ./client/build ./client/build
 
 # Copy server to image
-COPY ./server/src/server.js ./server/src
+COPY ./server/src ./server/src
 COPY ./server/package.json ./server/
 
 RUN pwd
