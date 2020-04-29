@@ -16,6 +16,7 @@ const startServer = () => {
         skip: (req, _res) =>
           req.originalUrl === '/is_alive' ||
           req.originalUrl === '/is_ready' ||
+          req.originalUrl === '/prometheus' ||
           req.originalUrl.includes('/static/') ||
           req.originalUrl.includes('/manifest') ||
           req.originalUrl.includes('/logo'),
