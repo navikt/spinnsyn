@@ -21,10 +21,10 @@ jobs:
         run: |
           npm install
         working-directory: ./server
-      - name: Run tests for server
-        run: |
-          npm run test
-        working-directory: ./server
+      #- name: Run tests for server
+      #  run: |
+      #    npm run test
+      #  working-directory: ./server
       - name: Install dependencies for client
         run: |
           npm install
@@ -35,10 +35,6 @@ jobs:
       #  run: |
       #    npm run test
       #  working-directory: ./client
-      - name: Build server
-        run: |
-          npm run compile
-        working-directory: ./server
       - name: Build client
         run: |
           npm run build
