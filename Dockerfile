@@ -4,7 +4,8 @@ FROM navikt/node-express:12.2.0-alpine
 # Copy client production build to image
 COPY ./client/build ./client/build
 
-COPY ./server/server.js ./server/
+# Copy server to image
+COPY ./server/src/server.js ./server/src
 COPY ./server/package.json ./server/
 
 RUN pwd
@@ -15,4 +16,4 @@ WORKDIR /var/server/server
 RUN npm install
 
 # Start the web server
-CMD ["npm", "start"] 
+CMD ["npm", "start"]
