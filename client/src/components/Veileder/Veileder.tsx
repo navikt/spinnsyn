@@ -1,12 +1,13 @@
 import './Veileder.less';
 
 import React from 'react';
-import Veilederpanel, { VeilederpanelProps } from 'nav-frontend-veilederpanel';
+import Veilederpanel from 'nav-frontend-veilederpanel';
 import Bjorn from './Bjorn';
 
-interface VeilederProps extends Partial<VeilederpanelProps> {
+type VeilederProps = {
+  fargetema: 'normal' | 'info' | 'suksess' | 'advarsel' | 'feilmelding';
   children: React.ReactNode;
-}
+};
 
 const Veileder = ({ fargetema, children }: VeilederProps) => {
   return (
