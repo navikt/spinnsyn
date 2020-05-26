@@ -5,7 +5,7 @@ import Veileder from './components/Veileder/Veileder';
 import { Normaltekst, Element } from 'nav-frontend-typografi';
 import StandardVeileder from './components/Veileder/StandardVeileder';
 import { BrowserRouter } from 'react-router-dom';
-import LenkepanelWrapper from './components/Lenkepanel/LenkepanelWrapper';
+import Linkpanel from './components/Linkpanel/Linkpanel';
 import bjorn from './svg/bjorn.svg';
 
 function App() {
@@ -35,24 +35,24 @@ function App() {
           content="NAV har behandlet søknaden din og har funnet ut at du ikke har krav på sykepenger. Nedenfor kan du finne ut
           hvorfor, hvilke lover som gjelder for begrunnelsen og hvilke muligheter du har for å klage på beslutning."
         />
-        <LenkepanelWrapper
-          lenke="www.nrk.no"
-          tittel="Søknad om sykepenger"
-          tekstGra="Firma1 AS - 100% i 13 dager"
-          tekstStatus="Søknad ble sendt til Firma1 AS/NAV 22. november 2019"
+        <Linkpanel
+          link="www.nrk.no"
+          title="Søknad om sykepenger"
+          greyText="Firma1 AS - 100% i 13 dager"
+          statusText="Søknad ble sendt til Firma1 AS/NAV 22. november 2019"
           svg={bjorn}
         />
-        <LenkepanelWrapper
-          lenke="www.nrk.no"
-          tittel="Sykmelding"
-          tekstGra="Firma1 AS - 100% i 13 dager"
-          tekstStatus="Sykmelding ble bekreftet og sendt til arbeidsgiver 03. november 2019"
+        <Linkpanel
+          link="www.nrk.no"
+          title="Sykmelding"
+          greyText="Firma1 AS - 100% i 13 dager"
+          statusText="Sykmelding ble bekreftet og sendt til arbeidsgiver 03. november 2019"
           svg={bjorn}
         />
-        <LenkepanelWrapper
-          lenke="www.nrk.no"
-          tittel="A-inntekt"
-          tekstGra="Innrapporterte innteker for 13 siste måneder"
+        <Linkpanel
+          link="www.nrk.no"
+          title="A-inntekt"
+          greyText="Innrapporterte innteker for 13 siste måneder"
           svg={bjorn}
         />
       </div>
